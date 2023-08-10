@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Browser</title>
+</head>
+
+<body>
+
+    <h1>My Text Code</h1>
+
+
+    <div id="test">
+        The following element contains some
+        <codes>code</codes> and
+        <italic>some text</italic>.
+        <p>Here is my paragraph</p>
+    </div>
+
+
+    <button onClick="innerHTMLFn()">
+        innerHTML
+    </button>
+    <button onClick="innerTextFn()">
+        innerText
+    </button>
+
+
+    <script>
+        function innerHTMLFn() {
+            let x = document.getElementById('test')
+            alert(x.innerHTML)
+        }
+
+        function innerTextFn() {
+            let x = document.getElementById('test')
+            alert(x.innerText)
+        }
+    </script>
+</body>
+
+</html>
